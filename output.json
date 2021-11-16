@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-25T16:57:18.824Z",
+    "end": "2021-10-25T16:58:41.807Z",
+    "duration": 12954,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "02f0fbe9-9bde-4467-bb95-5be7017c7b2e",
+      "title": "",
+      "fullFile": "cypress/integration/1-getting-started/parabankLogin_test.js",
+      "file": "cypress/integration/1-getting-started/parabankLogin_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6b9eef7b-cf3b-4076-87b8-ebf6ffddc20b",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to Parabank",
+              "fullTitle": "My First Test Login to Parabank",
+              "timedOut": null,
+              "duration": 7013,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.navigate('https://parabank.parasoft.com/parabank');\naddContext(this, 'Navigating to https://parabank.parasoft.com/parabank');\ncy.url().should('include', '/index.htm');\nloginPage.enterLoginCredentials(this.app_data.username, this.app_data.password);\naddContext(this, 'Username set to ' + this.app_data.username);\naddContext(this, 'Password set to ' + this.app_data.password);\nloginPage.clickLoginBtn(); // cy.contains('Welcome John Smith')\n//     .should('be.visible')",
+              "err": {},
+              "uuid": "13dc81ec-7786-4572-9427-a2e0f0d41849",
+              "parentUUID": "6b9eef7b-cf3b-4076-87b8-ebf6ffddc20b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "13dc81ec-7786-4572-9427-a2e0f0d41849"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7013,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d329e215-950d-450f-84b0-802c2a7f0b92",
+      "title": "",
+      "fullFile": "cypress/integration/1-getting-started/parabankLogin_test.js",
+      "file": "cypress/integration/1-getting-started/parabankLogin_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc82e755-6f98-4c06-a541-8b12f24263e5",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logging into Parabank",
+              "fullTitle": "My First Test Logging into Parabank",
+              "timedOut": null,
+              "duration": 5941,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.navigate('https://parabank.parasoft.com/parabank');\naddContext(this, 'Navigating to https://parabank.parasoft.com/parabank');\ncy.url().should('include', '/index.htm');\nloginPage.enterLoginCredentials(this.app_data.username, this.app_data.password);\naddContext(this, 'Username set to ' + this.app_data.username);\naddContext(this, 'Password set to ' + this.app_data.password);\nloginPage.clickLoginBtn(); // cy.contains('Welcome John Smith')\n//     .should('be.visible')",
+              "err": {},
+              "uuid": "2e74cf18-129c-47ed-8fdd-b72a3fd26ac3",
+              "parentUUID": "dc82e755-6f98-4c06-a541-8b12f24263e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e74cf18-129c-47ed-8fdd-b72a3fd26ac3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5941,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
