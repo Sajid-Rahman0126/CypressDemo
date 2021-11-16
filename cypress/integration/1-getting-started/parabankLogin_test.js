@@ -1,5 +1,4 @@
 import { LoginPage } from "../../pages/login_page"
-const addContext = require('mochawesome/addContext')
 
 let loginPage = new LoginPage()
 
@@ -14,7 +13,6 @@ describe('My First Test', function() {
         it('Navigate to the website', function (){
 
             loginPage.navigate('https://parabank.parasoft.com/parabank')
-            addContext(this, 'Navigating to https://parabank.parasoft.com/parabank')
 
             cy.url().should('include', '/index.htm')
 
@@ -24,8 +22,6 @@ describe('My First Test', function() {
         it('Input login credentials and click login', function(){
 
             loginPage.enterLoginCredentials(this.app_data.username, this.app_data.password)
-            addContext(this, 'Username set to '+ this.app_data.username)
-            addContext(this, 'Password set to '+ this.app_data.password)
 
             loginPage.clickLoginBtn()
             cy.url().should('include', '/overview.htm')
