@@ -6,7 +6,8 @@
   "scripts": {
     "cypress:open": "cypress open",
     "report-generate": "marge ./output.json --reportDir mochawesome --assetDir mochawesome/assets --reportPageTitle index.html",
-    "report-merge": "mochawesome-merge ./cypress/report/mochawesome-report/*.json > ./output.json"
+    "report-merge": "mochawesome-merge ./cypress/report/mochawesome-report/*.json > ./output.json",
+    "start": "npx cypress run --record --key 9728fd7e-173f-4c38-880a-d08229e93f8e"
   },
   "author": "",
   "license": "ISC",
