@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "start": "npx cypress run",
+    "start": "npx cypress run --record --key XXX --parallel --ci-build-id 'build02'",
     "build": "echo build script executed"
   },
   "author": "",
