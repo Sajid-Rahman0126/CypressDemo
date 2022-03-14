@@ -14,6 +14,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: npm run build
+                 export CYPRESS_API_URL="https://sorry-cypress-demo-director.herokuapp.com"
           start: npm start
           
   cypress-run2:
@@ -27,4 +28,5 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: npm run build
+                 export CYPRESS_API_URL="https://sorry-cypress-demo-director.herokuapp.com"
           start: npm start
