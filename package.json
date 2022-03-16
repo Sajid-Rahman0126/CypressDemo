@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-<<<<<<< HEAD
     "start": "npx cy2 run --record --key XXX --parallel --ci-build-id 'build04'",
-=======
-    "start": "npx cypress run --record --key XXX --parallel --ci-build-id 'build02'",
->>>>>>> b9221089117549b17839cb4c0a1645eb1a97a648
     "build": "echo build script executed"
   },
   "author": "",
