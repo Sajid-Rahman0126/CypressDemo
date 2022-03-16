@@ -14,4 +14,23 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: npm run build
+                 npm install
+                 npm install -g cy2
+                 export CYPRESS_API_URL=https://sorry-cypress-demo-director.herokuapp.com/
+          start: npm start
+          
+  cypress-run2:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+                 npm install
+                 npm install -g cy2
+                 export CYPRESS_API_URL=https://sorry-cypress-demo-director.herokuapp.com/
           start: npm start
