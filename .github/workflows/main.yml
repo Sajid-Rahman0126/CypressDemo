@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   cypress-run:
-    runs-on: windows-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -16,7 +16,7 @@ jobs:
           build: npm run build
                  npm install
                  npm install -g cy2
-                 export CYPRESS_API_URL=https://sorry-cypress-demo-director.herokuapp.com/
+                 export CYPRESS_API_URL="https://sorry-cypress-demo-director.herokuapp.com/"
           start: npm start
           
   cypress-run2:
@@ -32,5 +32,5 @@ jobs:
           build: npm run build
                  npm install
                  npm install -g cy2
-                 export CYPRESS_API_URL=https://sorry-cypress-demo-director.herokuapp.com/
+                 export CYPRESS_API_URL="https://sorry-cypress-demo-director.herokuapp.com/"
           start: npm start
